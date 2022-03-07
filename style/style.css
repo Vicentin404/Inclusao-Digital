@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Spotify-Circular';
+    src: url('../font/Circular/CircularStd-Book.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
+:root {
+    --font01: 'Spotify-Circular';
+
+    --cor01: #7E93E6;
+    --cor02: #385AE0;
+    --cor03: #2B45AD;
+    --cor04: #353E61;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font01), Arial, Helvetica, sans-serif;
+    background-color: var(--cor01);
+    background: linear-gradient(120deg, lightblue, rgb(95, 53, 161), lightblue)
+}
+
+header h1,p {
+    text-align: center;
+    font-family: 'Gideon Roman', cursive;
+}
+header p {    
+    padding-bottom: 20px;
+}
+
+#logo {
+    padding-top: 100px;
+    display: block;
+    margin: auto;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+header nav a:hover {
+    background-color: rgb(161, 124, 221);
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+header nav {
+    text-decoration: none;
+    color: white;
+    background-color: var(--cor03);
+    padding: 30px;
+    /*https://www.w3schools.com/howto/howto_css_fixed_menu.asp*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+main {
+    border-radius: 8px;
+    background-color: white;
+    max-width: 800px;    
+    text-align: center;
+    margin: auto;
+    text-align: justify;
+    padding: 35px;
+}
+
+main #ul2 {
+    padding-left: 40px;
+}
+
+ol {
+    padding: 0px 80px;
+    columns: 3;
+}
+
+main ul {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+main img {
+    margin: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+main p {    
+    font-family: var(--font01);
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 1.5em;
+    padding: 15px 0px;
+}
+
+main #x {
+    list-style-type: '\274C';
+}
+
+main #checked {
+    list-style-type: '\✔️';
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.aluno {
+    height: 100vh;    
+}
+
+.aluno img {
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor01);
+    box-shadow: 1px 1px 5px #353E61;
+    color: white;
+    text-shadow: 1px 1px 1px var(--cor04);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 30px;
+    margin-top: 30px;
+}
